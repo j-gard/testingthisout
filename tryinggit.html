@@ -3,25 +3,90 @@
   <header>
     <title>testing out git with this file</title>
   </header>
-  <body style="background-color: lightseagreen; display: flex;justify-content: center; align-items: center;">
-    <p style="margin-top: 220px; color:red; font-family:Arial, Helvetica, sans-serif; font-size: 50px; font-weight: 900; display: inline-flex; align-items: center; justify-content: center; border-style: solid; border-color: red; border-radius: 20px; padding: 20px;" > Hello World! Let me introduce you to git!</p>
+  <body style="background-color: lightseagreen;">
+    <div class="top">
+      <p id="kinda-header" style="margin-top: 220px; color:red; font-family:Arial, Helvetica, sans-serif; font-size: 50px; font-weight: 900; display: block; border-style: solid; border-color: red; border-radius: 20px; padding: 20px;" > Hello World! Let me introduce you to git!</p> <br>
+    </div>
     <section id="notes">
-      <p class="notes-help">
-        code . is for opening this editor through your terminal.
-      </p>
-      <p class="notes-help">
-        git add yourfile.language (ex. testing.html) is for adding a file to the editor via git in your terminal.
-      </p>
-      <p class="notes-help">
-        git commmit -m "note what you changed here" is essentially your save command. note that you are saving the FOLDER and everything in it rather than each FILE individually.
-      </p>
-      <p class="notes-help">
+      <div class="note-box">
+        <p class="notes-help">
+          code . is for opening this editor through your terminal.
+        </p>
+      </div>
+      <div class="note-box">
+        <p class="notes-help">
+          git add yourfile.language (ex. testing.html) is for adding a file to the editor via git in your terminal.
+        </p>
+      </div>
+      <div class="note-box">
+        <p class="notes-help">
+          git commmit -m "note what you changed here" is essentially your save command. note that you are saving the FOLDER and everything in it rather than each FILE individually.
+        </p>
+      </div>
+      <div class="note-box">  
+        <p class="notes-help">
         git status is for making sure that your code is saved and tracked. 
-      </p>
-      <p class="notes-help">
-        git push is for pushing your saved files online so you can edit them later or so others can edit them. 
-      </p>
+        </p>
+      </div>
+      <div class="note-box">
+        <p class="notes-help">
+          git push is for pushing your saved files online so you can edit them later or so others can edit them. 
+        </p>
+      </div>
       
     </section>
   </body>
+
+  <style>
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #kinda-header {
+      display: block;
+    }
+
+    #notes {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      padding: 10%;
+      margin-top: 0px;
+    }
+
+    .note-box {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      color: rgb(220, 220, 4);
+      border-style: solid;
+      border-color: yellow;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0px;
+      margin: 50px;
+    }
+
+    .note-box:hover {
+      border-radius: 7px;
+      color: yellow;
+      text-shadow: 2px 2px 3px rgb(60, 60, 0);
+    }
+
+    .notes-help {
+      display: flex;
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      height: 300px;
+      width: 220px;
+    }
+
+  </style>
 </html>
