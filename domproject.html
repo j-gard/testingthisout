@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>DOM Project</title>
+  </header>
+  <body>
+    <p> Subscribe! </p>
+    <button onclick="subscribe (); " 
+    class="js-buttontime"> Button Time </button>
+
+
+    <script>
+      function subscribe () {
+        const buttontimeElement = (document.querySelector('.js-buttontime'));
+
+        if (buttontimeElement.innerText === 'Subscribe right NOW!') {
+          buttontimeElement.innerHTML = 'You Subscribed!';
+        } else {
+          buttontimeElement.innerHTML = 'Subscribe right NOW!';
+        }
+              }
+
+    </script>
+  </body>
+</html>
